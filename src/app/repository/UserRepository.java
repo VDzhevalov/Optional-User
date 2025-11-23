@@ -12,7 +12,7 @@ public class UserRepository {
         this.users = users;
     }
 
-    public  Optional<List<User>> findAllUsers() {
+    public Optional<List<User>> findAllUsers() {
         return Optional.ofNullable(users);
     }
 
