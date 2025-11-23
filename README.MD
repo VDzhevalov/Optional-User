@@ -11,5 +11,24 @@
   - a. Пошук користувача за id. Перевіряє, чи знайдений користувач присутній, і виводить інформацію про нього, якщо він є.
   - b. Пошук користувача за email. Перевіряє, чи знайдений користувач присутній, і виводить інформацію про нього, якщо він є.
   - c. Отримання списку всіх користувачів. Перевіряє, чи список користувачів присутній, і виводить кількість користувачів у списку.
+
+#### Формат виведення:
+```
+All users(0): No data
+findUserById(0): No data
+ByName(Alice): [No data]
+findUserByEmail(alice@test.com): No data
+
+All users(2): [User{id=1, name=Tom, email=tom@test.com}, User{id=2, name=John, email=john@@test.com}]
+findUserById(0): No data
+ByName(Alice): [No data]
+findUserByEmail(alice@test.com): No data
+
+All users(3): [User{id=0, name=Alice, email=alice@test.com}, User{id=1, name=Tom, email=tom@test.com}, User{id=2, name=Tom, email=another_tom@@test.com}]
+findUserById(1): User{id=1, name=Tom, email=tom@test.com}
+ByName(Tom): [User{id=1, name=Tom, email=tom@test.com},
+User{id=2, name=Tom, email=another_tom@@test.com}]
+findUserByEmail(another_tom@@test.com): User{id=2, name=Tom, email=another_tom@@test.com}
+```
     
 
